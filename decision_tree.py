@@ -1,3 +1,4 @@
+# coding=utf-8
 #####################################################
 # Tyler Hedegard
 # 7/1/16
@@ -53,11 +54,11 @@ test_data = test_data.T.drop_duplicates().T
 # Make 'activity' a categorical variable.
 label_meaning = pd.read_table('UCI HAR Dataset/activity_labels.txt', header=None, sep="\s", engine='python')
 label_meaning.columns = ('Category','Activity')
-#data['label'] = label
+# data['label'] = label
 
 # Plot a histogram of Body Acceleration Magnitude (i.e. histogram of all 6 activities)
 # to see how each variable does as a predictor of static versus dynamic activities.
-data['tAccMean'].hist(by=label[0])
+# data['tAccMean'].hist(by=label[0])
 
 # Split the data into training, test, and validation sets.
 # training set = data
